@@ -1,33 +1,23 @@
-Kişisel Sağlık Takip Uygulaması Kullanım Kılavuzu
-Bu kullanım kılavuzu, Kişisel Sağlık Takip uygulamasının nasıl kullanılacağına dair adım adım talimatlar içermektedir. Uygulamayı başarıyla kullanabilmek için aşağıdaki adımları takip edebilirsiniz:
+Maaş Ödeme Sistemi:
 
-1. Uygulamayı Başlatma ve Giriş Yapma
-Adım 1: Uygulamayı başlatmak için main.py dosyasını çalıştırın.
-bash
-Copy code
-python main.py
-Adım 2: Karşınıza giriş ekranı gelecektir. Burada aşağıdaki adımları izleyin:
-Kullanıcı Adı: "admin"
-Şifre: "admin"
-Adım 3: Giriş bilgilerini doğru girdiğinizde, uygulama ana penceresine yönlendirileceksiniz.
-2. Kişisel Bilgilerin Girişi ve Endeks Hesaplama
-Adım 1: Ana pencerede, kişisel bilgilerinizi girin:
-Boy (cm): Kendi boyunuzu santimetre cinsinden girin.
-Kilo (kg): Kendi kilonuzu kilogram cinsinden girin.
-Yaş: Yaşınızı girin.
-Cinsiyet: Cinsiyetinizi (örneğin, "Erkek" veya "Kadın") belirtin.
-Adım 2: "Endeks Hesapla" düğmesine tıklayarak vücut kitle endeksinizi (BMI) hesaplayın.
-Hesaplanan endeks bilgisi ve cinsiyet bilgisi bir bilgi iletişim kutusunda görüntülenecektir.
-3. Önerilen Egzersiz Miktarının Görüntülenmesi
-Adım 1: Endeks hesaplandıktan sonra, "Egzersizler" düğmesine tıklayın.
-Bu düğme, vücut kitle endeksinize göre önerilen egzersiz miktarını içeren bir sayfayı açacaktır.
-Adım 2: Egzersiz sayfasında, önerilen egzersiz türleri ve miktarları görüntülenecektir.
-4. Çıkış
-Uygulamayı kullanımınızı tamamladıktan sonra, pencereyi kapatabilir veya uygulamayı sonlandırabilirsiniz.
+Maaş Ödeme Sistemi, bir şirketin maaş ödemelerini yönetmek için kullanılan bir PyQt5 tabanlı bir uygulamadır. Bu sistem, şirketin bakiyesini yönetmek, 
+çalışanları eklemek, çıkarmak veya düzenlemek, departmanlara maaş ödemek ve dekontları göndermek gibi temel işlevleri içerir.
 
+Kullanım Kılavuzu:
 
-KAYNAK KODLARININ BULUNDUĞU SAYFALAR:
-main.py 
-login_window.py
-main_window.py
+Şirket Bakiyesi Görüntüleme ve Güncelleme:
+"Şirket Bakiyesi" başlığı altında mevcut bakiyeyi görebilirsiniz.
+"Bakiyeyi Güncelle" düğmesini kullanarak şirket bakiyesini güncelleyebilirsiniz. Yeni bakiyeyi girip düğmeye tıkladıktan sonra güncelleme işlemi gerçekleştirilir.
 
+Departman Seçimi:
+"Departman" başlığı altında mevcut departmanları seçebilirsiniz.
+Departman seçimi değiştirildiğinde, o departmana ait çalışanlar otomatik olarak listelenir.
+
+Çalışan İşlemleri:
+"Çalışan Ekle" düğmesiyle yeni bir çalışan ekleyebilirsiniz. Ad, IBAN ve maaş ödeme tarihini girmeniz istenir.
+"Çalışan Çıkar" düğmesiyle seçili çalışanı sistemden çıkarabilirsiniz.
+"Çalışan Bilgilerini Düzenle" düğmesiyle seçili çalışanın bilgilerini düzenleyebilirsiniz.
+
+Maaş Ödeme İşlemleri:
+"Maaş Öde" düğmesiyle seçili departmana maaş ödemesi yapabilirsiniz. Şirket bakiyesi yeterli değilse uyarı alırsınız.
+Maaş ödemesi yapıldıktan sonra, "Dekont Gönder" düğmesi aktif hale gelir. Bu düğmeye tıklayarak dekontları gönderebilirsiniz.
